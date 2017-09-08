@@ -11,7 +11,6 @@ def JSTMB(data_file, target_file, hm_feat):
 if __name__ == "__main__":
     data = sys.argv[1]
     target = sys.argv[2]
-    hm_feat = sys.argv[3]
-    selected_feature = np.array(JSTMB(data, target, hm_feat), dtype=np.int16)
+    selected_feature = np.array(JSTMB(data, target), dtype=np.int16)
     np.savetxt('Features_O196_JSTMB.csv', selected_feature, delimiter=',')
     print selected_feature
