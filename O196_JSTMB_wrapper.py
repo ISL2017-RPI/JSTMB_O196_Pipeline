@@ -2,7 +2,7 @@ import sys
 import JSTMB_O196
 import numpy as np
 
-def JSTMB(data_file = 'trainData.csv', target_file = 'trainargets.csv'):
+def JSTMB(data_file = 'trainData.csv', target_file = 'trainTargets.csv'):
     my_JMI = JSTMB_O196.initialize()
     feat = my_JMI.JSTMB_primitive_O196(data_file, target_file)
     return feat
