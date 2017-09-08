@@ -4,7 +4,7 @@ import numpy as np
 
 def JSTMB(data_file, target_file, hm_feat):
     my_JMI = JSTMB_O196.initialize()
-    feat = my_JMI.JSTMB_primitive_O196(data_file, target_file, hm_feat)
+    feat = my_JMI.JSTMB_primitive_O196(data_file, target_file)
     return feat
 
 
